@@ -58,7 +58,7 @@ if file_1 and file_2:
     st.header("Write the questions to generate a summary")
 
     st.write("Brief company description")
-    company_description = "full-remote consulting company with 100 employees"
+    company_description = st.text_area("Brief company description", value="full-remote consulting company with 100 employees")
 
     st.write("The questions should be separated by a new line.")
     questions = st.text_area("Questions", 
