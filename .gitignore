@@ -1,0 +1,5 @@
+.chroma
+*__pycache__
+data/
+config.yml
+sw_vs_allianz.ipynb

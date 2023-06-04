@@ -21,12 +21,12 @@ class PdfToTextLoader:
             Loads pdf file and saves it as text file
         """
         with open(self.pdf_path, 'rb') as pdf_file:
-            pdf_reader = PyPDF2.PdfFileReader(pdf_file)
-            num_pages = pdf_reader.numPages
+            pdf_reader = PyPDF2.PdfReader(pdf_file)
+            num_pages = len(pdf_reader.pages)
             text = ''
             for page in range(num_pages):
-                page = pdf_reader.getPage(page)
-                text += page.extractText()
+                page = pdf_reader.pages[page]
+                text += page.extract_text()
             with open(self.output_path, 'w') as text_file:
                 text_file.write(text)
         return text
