@@ -105,14 +105,14 @@ Can I use the insurance in other countries?""")
         """
     
     prompt = PromptTemplate(
-        input_variables=["summary_of_answers", "final_criteria"],
+        input_variables=["summary_of_answers", "company_description", "final_criteria"],
         template=template,
     )
     
     answer = ""
     llm = OpenAI(model_name='text-davinci-003', temperature=0, openai_api_key=OPENAI_API_KEY, request_timeout=60)
     chain = LLMChain(llm=llm, prompt=prompt)
-    answer = chain.run({"summary_of_answers": summary_of_answers, "final_criteria": final_criteria})
+    answer = chain.run({"summary_of_answers": summary_of_answers, "final_criteria": final_criteria, "company_description": company_description})
 
     # ----- Generate the final answer -----
     st.header("Final answer")
