@@ -15,3 +15,6 @@ Asking questions: ❓ The script then asks a set of predefined questions about t
 Comparing Answers: 🆚 After gathering the responses, the script summarizes the answers from each company, providing a quick and easy way to compare the offerings of each company.
 
 Ratings: ⭐️ The script also provides a rating system that grades each insurance policy in terms of coverage of different health procedures, flexibility for remote workers abroad, and price and compensation.
+
+## What does the app do?
+
