@@ -18,3 +18,15 @@ Ratings: ⭐️ The script also provides a rating system that grades each insura
 
 ## What does the app do?
 
+![](https://github.com/Rachnog/pdfs_question_answering/blob/main/streamlit.gif)
+
+App Flow 🌊
+Upload Insurance Plans: Users upload two insurance plan documents in PDF format. They can also provide names for these plans.
+
+PDF Loading and Vectorizing: The app converts PDF files into text, and then generates vector representations of the text for further processing.
+
+User Input: Users provide a brief company description and a list of questions that they want to use to compare the plans. They also provide a set of final criteria for decision-making.
+
+Processing and Answer Generation: The app processes the questions against each plan, gathers answers, and generates a final decision based on the provided criteria. It utilizes OpenAI's language model to analyze and understand the information in the documents and to create the final decision.
+
+Output: The app outputs the answers to the provided questions and the final comparative decision based on the criteria. It presents these in an easy-to-understand format.
